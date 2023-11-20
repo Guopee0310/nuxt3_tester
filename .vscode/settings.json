@@ -1,0 +1,60 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "json.schemaDownload.enable": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",// 未壓縮的css，預設
+            "extensionName": ".css",// css檔名結尾
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "[git-commit]": {
+        "editor.rulers": [
+            72
+        ]
+    },
+    "liveSassCompile.settings.autoprefix": [
+    
+    
+    ],
+    "git.ignoreWindowsGit27Warning": true,
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.startupEditor": "none",
+    "bracketPairColorizer.depreciation-notice": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.fontSize": 16,
+    // "[html]": {
+    //     "editor.defaultFormatter": "HookyQR.beautify"
+    // },
+    "window.zoomLevel": 1,
+    "volar.inlayHints.eventArgumentInInlineHandlers": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "editor.suggest.preview": true,
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "vue.inlayHints.optionsWrapper": false,
+    "eslint.codeActionsOnSave.rules": null,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "liveSassCompile.settings.includeItems": [
+
+    
+    
+    ],
+    "tailwindCSS.experimental.classRegex": [
+        
+
+    ],
+    "tailwindCSS.experimental.configFile": null,
+    "editor.tabSize": 2,
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top",
+    "editor.suggest.showSnippets": true,
+    "css.customData": [".vscode/tailwind.json"],
+}

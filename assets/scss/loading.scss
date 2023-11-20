@@ -1,0 +1,8 @@
+:deep() {
+  .example-showcase .el-loading-mask {
+    z-index: 9;
+  }
+  .el-loading-spinner .path {
+    stroke: theme('colors.primary.400');
+  }
+}

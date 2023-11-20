@@ -1,0 +1,198 @@
+  :deep() {
+    table {
+      @apply w-full;
+    }
+  
+    table.no-border th, table.no-border td {
+      border:0 !important;
+    }
+  
+    table tr th, table tr td {
+      padding: 10px;
+      vertical-align: top;
+      border: 1px solid #DDD;
+    }
+  
+    table tr th {
+      @apply bg-secondary-500 text-white font-bold;
+    }
+    
+    table.rwd-table , table.nl-table{
+      margin:auto;
+      border-collapse:separate;
+      border-spacing: 0;
+      margin:20px 0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+  
+   
+    table.rwd-table thead tr th , table.nl-table thead tr th {
+      font-size: 18px;
+      position:sticky;
+      top:0;
+    }
+    
+    table.rwd-table thead tr th ,  table.rwd-table thead tr td , table.nl-table thead tr th ,   table.nl-table thead tr td {
+      text-align: center;
+    }
+    
+    table.rwd-table tr th, table.rwd-table tr td ,table.nl-table tr th, table.nl-table tr td {
+      min-height:40px;
+      padding:15px;
+    }
+  
+    table.rwd-table tr td ,table.nl-table tr td {
+      border:1px solid #ddd;
+    }
+    
+    table.rwd-table tr th:not(:last-child) ,table.nl-table tr th:not(:last-child) {
+      border-right:1px solid white;
+    }
+    
+    table.nl-table tr th, table.nl-table tr td {
+      word-break: normal;
+    }
+  
+    .nl-table-outter{
+      overflow-x: auto;
+      width: 100%;
+    }
+  
+    .nl-table-outter table.nl-table{
+      width: 100%;
+    }
+  
+    @media (max-width: 581px){
+      .nl-table-outter table.nl-table{
+          max-width: 580px;
+      }
+    }
+    
+    table.rwd-table tbody div.data-title{
+      display:none;
+    }
+    
+    @media (max-width:768px) {
+      table.rwd-table {
+        border:none;
+      }
+      
+      table.rwd-table colgroup col {
+        width:100% !important;
+        min-width: 100% !important;
+      }
+      
+      table.rwd-table thead  {
+        display:none;
+      }
+      
+      table.rwd-table tbody tr:nth-child(even) {
+        background:#fff;
+      }
+      
+      table.rwd-table tr  {
+        margin-bottom:15px;
+        display:block;
+        position: relative;
+        box-shadow:0px 0px 1px 1px #ddd;
+        border-radius:5px;
+        overflow:hidden;
+        cursor:pointer;
+      }
+      
+      table.rwd-table tr th, table.rwd-table tr td  {
+       border:none;
+      }
+    
+    
+      table.rwd-table tbody th, table.rwd-table tbody td {
+        display:flex;
+        align-items: center;
+        position: relative;
+        z-index:1;
+        padding:5px;
+      }
+      
+      table.rwd-table tbody div {
+        margin-left:0;
+        padding:8px;
+      }
+      
+      table.rwd-table tbody tr td:first-child {
+        background:#f5f5f5;
+        position:relative;
+      }
+      
+      table.rwd-table tbody tr td:first-child::after {
+        @apply text-secondary-500;
+        content:'+';
+        font-size:22px;
+        font-weight:bold;
+        position:absolute;
+        right:20px;
+        top:50%;
+        transform:translateY(-50%);
+        margin:auto;
+      }
+      
+      table.rwd-table tbody tr td:first-child ~ td  {
+        display:none;
+      }
+      
+      table.rwd-table tbody tr td:first-child.dropdown-open  {
+        border-bottom:1px solid #ddd;
+      }
+      
+      table.rwd-table tbody tr td:first-child.dropdown-open::after {
+        content:'‒';
+        
+      }
+      
+      table.rwd-table tbody tr td:first-child.dropdown-open ~ td {
+        display:block;
+      }
+      
+       table.rwd-table tbody tr td:first-child.dropdown-open ~ td:not(:last-child) {
+        border-bottom:1px solid #eee;
+      }
+      
+      table.rwd-table tbody tr td:first-child > div {
+        color:black;
+      }
+      
+      table.rwd-table tbody tr td:first-child > div  {
+        background:none;
+      }
+      
+      table.rwd-table tbody tr td:first-child > div:first-child {
+        @apply text-secondary-500;
+      }
+    
+      table.rwd-table tbody tr td:first-child > div:last-child  {
+        font-size:18px;
+        color:black;
+      }
+      
+      table.rwd-table tbody td:nth-child(even)>div.data-title:first-child  {
+        @apply text-secondary-500;
+        background:white;
+        font-weight:bold;
+      }
+      
+      table.rwd-table tbody td:nth-child(even)>div:last-child  {
+        background:white;
+        
+      }
+      
+      table.rwd-table tbody div.data-title  {
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+        font-weight:bold;
+        @apply text-secondary-500;
+      }
+    }
+  }
+
+ 

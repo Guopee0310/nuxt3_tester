@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #5fb6b3;
+      }
+    </style>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <g>
+      <ellipse class="cls-2" cx="19" cy="11" rx="14" ry="11"/>
+      <polygon class="cls-2" points="0 11 6 7.54 6 14.46 0 11"/>
+      <g>
+        <path class="cls-1" d="M8.51,7.08h1.39v3.15h3.17v-3.15h1.39v7.84h-1.39v-3.48h-3.17v3.48h-1.39V7.08Z"/>
+        <path class="cls-1" d="M16.06,10.97c0-2.54,1.42-4.03,3.46-4.03s3.46,1.5,3.46,4.03-1.42,4.1-3.46,4.1-3.46-1.56-3.46-4.1Zm5.49,0c0-1.76-.8-2.83-2.03-2.83s-2.03,1.06-2.03,2.83,.8,2.89,2.03,2.89,2.03-1.13,2.03-2.89Z"/>
+        <path class="cls-1" d="M25.83,8.25h-2.26v-1.17h5.92v1.17h-2.26v6.67h-1.39v-6.67Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

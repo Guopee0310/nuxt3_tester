@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    @apply text-base-600;
+    font-size: 15px;
+    font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    display:inline-block;
+}
+
+h1 { @apply text-3xl }
+
+h2 { @apply text-2xl }
+
+h3 { @apply text-xl }
+
+.shadow-1 { @apply shadow-[0_0_10px_rgba(0,0,0,.15)] }
+.shadow-2 { @apply shadow-[0_3px_10px_1px_rgba(0,0,0,.1)]}
+
+a:not(.active){
+    transition: all .2s ease-in-out;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+button { transition: all .2s ease-in-out }
+
+.writing-mode-horizontal { writing-mode: horizontal-tb }
+.writing-mode-vertical { writing-mode: vertical-lr }
+.writing-mode-vertical-rl { writing-mode: vertical-rl }

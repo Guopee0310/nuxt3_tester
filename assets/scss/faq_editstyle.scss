@@ -1,0 +1,120 @@
+    .main {
+        @apply text-lg;
+    }
+    
+    ol{
+        list-style-type: decimal;
+        margin-left: 25px;
+    }
+
+    img {
+        width:100%;
+        height:auto;
+    }
+    
+    ul {
+        list-style:none;
+        &.circle-type {
+            list-style-type: circle;
+            margin-left:25px;
+        }
+    }
+    
+    ul,ol{
+        margin-bottom:20px;
+    }
+    
+    ul li, ol li,p{
+        line-height: 1.6;
+    }
+
+    .note{
+        @apply text-danger-600;
+    }
+
+    .note2{
+        @apply text-primary-500;
+    }
+
+    a {
+        @apply text-link;
+    }
+    
+    .conTit{
+        @apply text-primary-500 text-2xl;
+        letter-spacing: 0.1em;
+        margin-top: 0;
+        margin-bottom:25px;
+        font-weight: bold;
+        @media only screen and (max-width: 992px) {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        >i{
+            display:none;
+        }
+    }
+    
+    .bold_T {
+        font-weight:bold;
+        margin-top: 1.33em;
+    }
+
+    .fze1{
+        @apply text-primary-500 text-3xl;
+        letter-spacing: 0.1em;
+        font-weight:bold;
+        margin-bottom: 10px;
+    }
+
+    .fze2{
+        @apply text-primary-500 text-2xl;
+        letter-spacing: 0.1em;
+        font-weight:normal;
+        margin-bottom: 20px;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.95);
+        @media only screen and (max-width: 1301px) {
+            top:50px;
+            margin-bottom: 0;
+        }
+        >i{
+            display:none;
+        }
+    }
+
+    .fze3{
+        @apply text-primary-500;
+    }
+    
+    .fze4{
+        @apply text-secondary-700 text-xl;
+        letter-spacing: 0.1em;
+        margin: 20px 0 0;
+        font-weight: bold;
+    }
+
+    @for $i from 1 through 10 {
+        @if ($i<10) {$i:'0' + $i;}
+        .step#{$i} {
+            @apply border-b border-solid border-secondary-500;
+            display: flex;
+            align-items: flex-end;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            &:before{
+               content:'STEP#{$i}';
+               @apply bg-secondary-500 border-b border-solid border-secondary-500;
+               font-family: '微軟正黑體';
+               display: inline-block;
+               padding: 6px;
+               color:white;
+               font-weight: normal;
+               margin-right: 10px;
+               line-height: 1;
+            }
+        }
+    }
+
+
