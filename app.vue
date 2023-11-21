@@ -1,5 +1,7 @@
 <template>
   <div>
+    <!-- NuxtLayout內建佈局元件，用於結構化頁面的整體佈局。它可以包含通用元素，如標頭、尾部和導航。 -->
+    <!-- NuxtPage代表頁面的主內容區域。它通常渲染特定頁面的內容。 -->
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

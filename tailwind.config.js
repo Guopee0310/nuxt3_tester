@@ -1,3 +1,5 @@
+//這頁引入tailwind 有很多設定好的變數
+
 import plugin from 'tailwindcss/plugin'
 import tailwindScrollbar from 'tailwind-scrollbar'
 
