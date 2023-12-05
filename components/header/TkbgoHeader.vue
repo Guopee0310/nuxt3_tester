@@ -87,7 +87,10 @@
                           :data-type="item.dateType"
                           class="wrap pcHref"
                         > -->
-                        <nuxt-link class="wrap pcHref nav-drop-link" :to="item.linkSrc">
+                        <nuxt-link
+                          class="wrap pcHref nav-drop-link"
+                          :to="`product/toProductType?group=${item.parentId}&type=${item.id}`"
+                        >
                           {{ item.name }}
                         </nuxt-link>
                       </li>
@@ -167,14 +170,12 @@
                       </nuxt-link>
                     </li>
                     <li class="ndList-item-b">
-                      <a
-                        href="${BASE_URL}schoolZone/toGraduateIndex.jsp?graduate_type=127"
-                        class="nav-drop-link gaHeader"
+                      <nuxt-link to="/schoolZone/university/toIndex" class="nav-drop-link gaHeader"
                         ><font-awesome-icon
                           :icon="['fas', 'caret-right']"
                           size="sm"
                           class="mr-1"
-                        />高升大</a
+                        />高升大</nuxt-link
                       >
                     </li>
                   </ul>
